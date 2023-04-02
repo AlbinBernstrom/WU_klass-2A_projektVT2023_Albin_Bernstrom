@@ -22,9 +22,10 @@ header {
     grid-area: he;
     display: flex;
     height: 60px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(0, 0, 0);
+    padding-inline: 20px;
 }
 
 #logo {
@@ -42,6 +43,7 @@ header {
     color: aqua;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 #index_what{
@@ -68,6 +70,20 @@ header {
     background-repeat: no-repeat;
 }
 
+#faq_what {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separator {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 100px solid rgb(53, 11, 49);
+    margin-top: -100px;
+}
+
 .article {
     grid-area: ar;
     flex-direction: column;
@@ -75,7 +91,8 @@ header {
     align-items: center;
     background-color: rgb(53, 11, 49);
     font-size: 25px;
-    padding: 20px;
+    padding: 40px;
+    padding-block: 50px;
 }
 
 #index_article {
@@ -94,6 +111,7 @@ header {
     padding: 20px;
     transition: all 0.5s;
 }
+
 .article_card:hover{
     transform: scale(1.05);
 }
@@ -103,6 +121,15 @@ header {
     color: rgb(207, 207, 207);
 }
 
+.faq_card {
+    width: 80%;
+    margin: 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    color: aliceblue;
+    
+}
 
 footer {
     grid-area: fo;
