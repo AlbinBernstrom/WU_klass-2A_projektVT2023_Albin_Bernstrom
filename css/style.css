@@ -65,7 +65,7 @@ nav ul a {
 }
 
 nav ul :hover{
-    background-color: aqua;
+    background-color: rgb(59, 75, 75);
 }
 
 #logo {
