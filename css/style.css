@@ -136,7 +136,7 @@ nav ul :hover{
     align-items: center;
 }
 
-#join {
+.join {
     font-size: 30px;
     background-color: #5d39a6;
     border-radius: 20px;
@@ -144,7 +144,7 @@ nav ul :hover{
     color: rgb(255, 226, 226);
 }
 
-#join :hover {
+.join :hover {
     background-color: #422876;
     cursor: pointer;
 }
