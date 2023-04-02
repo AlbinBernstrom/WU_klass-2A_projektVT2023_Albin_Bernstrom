@@ -1,0 +1,3 @@
+Jag tror man bara kan få ljud av videon om man tar ut den ut visual studio. 
+Typ dra ut filen på skrivbordet och öppna den sedan. 
+Jag vet inte om det är ett vanligt problem, det är därför jag skriver denna texten.
