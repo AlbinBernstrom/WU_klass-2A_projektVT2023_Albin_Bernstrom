@@ -83,6 +83,7 @@ nav ul :hover{
     justify-content: space-around;
     align-items: center;
     padding-bottom: 60px;
+    
 }
 
 #index_what{
@@ -304,14 +305,7 @@ a {
     .article {
         flex-direction: row;
         flex-wrap: wrap;
-        display: flex;
-        align-items: center;
         justify-content: space-around;
-        background-color: rgb(53, 11, 49);
-        font-size: 25px;
-        padding: 40px;
-        padding-block: 50px;
-        color: antiquewhite;
         gap: 20px;
     }
 
