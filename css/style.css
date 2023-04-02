@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     grid-template-areas: 
-    "he"
+    "he na"
     "wh"
     "ar"
     "fi"
@@ -28,6 +28,46 @@ header {
     padding-inline: 20px;
 }
 
+nav {
+    grid-area: na;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    right: 0px;
+    width: 50px;
+}
+
+#nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    top: -760px;
+    right: 0px;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+#nav.is-active {
+    transform: translateY(820px);
+}
+
+
+
+nav ul a {
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+nav ul :hover{
+    background-color: aqua;
+}
+
 #logo {
     margin-top: 5px;
     height: 130px;
@@ -38,16 +78,15 @@ header {
     display: flex;
     width: 100%;
     height: 500px;
-    background-color: rgb(47, 3, 21);
+    background-color: #760f4d;
     font-size: 60px;
-    color: aqua;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 60px;
 }
 
 #index_what{
-    background-size: 1500px;
+    background-size: cover;
     background-image: url(../img/index_what.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -64,22 +103,56 @@ header {
 
 #om_oss_what {
     background-image: url(../img/om_oss_what.jpg);
-    background-size: 1500px;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#resurser_what {
+    background-image: url(../img/resurser_what.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #faq_what {
+    background-image: url(../img/faq_what.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#join {
+    font-size: 30px;
+    background-color: #5d39a6;
+    border-radius: 20px;
+    padding: 20px;
+    color: rgb(255, 226, 226);
+}
+
+#join :hover {
+    background-color: #422876;
+    cursor: pointer;
+}
+
+
 .separator {
     width: 0;
     height: 0;
-    border-right: 100vw solid transparent;
+    border-right: 97.5vw solid transparent;
     border-bottom: 100px solid rgb(53, 11, 49);
     margin-top: -100px;
 }
@@ -93,6 +166,11 @@ header {
     font-size: 25px;
     padding: 40px;
     padding-block: 50px;
+    color: antiquewhite;
+}
+
+.article article {
+    padding-block: 20px;
 }
 
 #index_article {
@@ -123,10 +201,10 @@ header {
 
 .faq_card {
     width: 80%;
-    margin: 2px;
-    background-color: rgb(0, 0, 0);
+    margin: 3px;
+    background-color: rgb(30, 5, 27);
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     color: aliceblue;
     font-size: 20px;
 }
@@ -205,8 +283,46 @@ a {
 
 
 @media screen and (min-width:800px) {
-    /* CSS för fönster som är 800 pixelar eller mer kommer läggas här*/
+
     * {
-        background-color: aqua;
+    
     }
+
+    header {
+        height: 80px;
+    }
+
+    #nav.is-active {
+        transform: translateY(840px);
+    }
+
+    .separator {
+        display: none;
+    }
+
+
+    .article {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(53, 11, 49);
+        font-size: 25px;
+        padding: 40px;
+        padding-block: 50px;
+        color: antiquewhite;
+        gap: 20px;
+    }
+
+    .faq_card {
+        width: 700px;
+    }
+    
+
+    footer a{
+        font-size: 60px;
+        padding-bottom: 50px;
+    }
+
 }
