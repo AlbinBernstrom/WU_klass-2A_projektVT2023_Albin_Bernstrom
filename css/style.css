@@ -18,6 +18,10 @@ h1 {
     color: rgb(129, 128, 128);
 }
 
+p {
+    font-size: 50px;
+}
+
 header {
     grid-area: he;
     display: flex;
@@ -58,13 +62,13 @@ nav {
 
 
 
-nav ul a {
+nav div a {
     font-size: 50px;
     color: aliceblue;
     font-weight: bold;
 }
 
-nav ul :hover{
+nav div :hover{
     background-color: rgb(59, 75, 75);
 }
 
@@ -195,7 +199,7 @@ nav ul :hover{
     transform: scale(1.05);
 }
 
-.article_card h2 {
+.article_card p {
     font-size: 25px;
     color: rgb(207, 207, 207);
 }
@@ -229,6 +233,10 @@ footer article {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+footer p {
+    font-size: 40px;
 }
 
 footer a {
